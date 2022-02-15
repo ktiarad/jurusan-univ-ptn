@@ -2911,6 +2911,17 @@ ALTER TABLE `jurusan`
 ALTER TABLE `jurusan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2857;
 
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `jurusan`
+--
+ALTER TABLE `jurusan`
+  ADD CONSTRAINT `jurusan_ibfk_1` FOREIGN KEY (`univ_id`) REFERENCES `universitas` (`id`);
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
